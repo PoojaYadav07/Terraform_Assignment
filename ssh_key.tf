@@ -1,5 +1,5 @@
-resource "aws_key_pair" "example_keypair" {
-  key_name   = "example_ssh_key"
+resource "aws_key_pair" "ssh_key" {
+  key_name   = "ssh_key"
   public_key = tls_private_key.ssh_key.public_key_openssh
 }
 
